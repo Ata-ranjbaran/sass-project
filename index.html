@@ -1,0 +1,1253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 category.0">
+    <title>cruip</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"></head>
+    <style>
+.body {
+  background: url(/icon/download\ \(6\).svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  height: auto;
+  background-color: #1d1d20;
+  color: #f4f4f5;
+  overflow-x: hidden;
+}
+.body header {
+  background-color: #111827;
+  height: 58px;
+  color: #f4f4f5;
+  display: flex;
+  position: relative;
+  padding: 10px;
+}
+.body header div div button {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+.body header div div button img {
+  float: right;
+  margin-left: 60px;
+  width: 25px;
+  transform: rotate(180deg);
+}
+.body header div div .cole {
+  position: absolute;
+  top: 50px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.body header div div .cole li {
+  background-color: light;
+  width: 150px;
+  height: 40px;
+  color: #aaa;
+  z-index: 9;
+}
+.body header div div .buy img {
+  width: 30px;
+}
+.body header div div .buy button {
+  text-align: center;
+  background-color: #7656F6;
+  color: #fff;
+  border-radius: 0.25rem;
+  border: none;
+  height: 33px;
+}
+.body header div div .buy button:hover {
+  background-color: rgba(118, 86, 246, 0.8666666667);
+  color: #eee;
+}
+.body .background {
+  background: url(/icon/download\ \(15\).svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+.body .header2 .switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.body .header2 .switch input {
+  background-color: red;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.body .header2 .slider2 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3ABAB4;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.body .header2 .slider2:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  left: 0.2em;
+  top: 0.1em;
+  transform: rotate(270deg);
+  background-color: #2e2e33;
+  transition: 0.4s;
+}
+.body .header2 .switch input:checked + .slider2 {
+  background-color: #dcf6e3;
+}
+.body .header2 .switch input:focus + .slider2 {
+  box-shadow: 0 0 1px #2196F3;
+}
+.body .header2 .switch input:checked + .slider2:before {
+  transform: translateX(1em);
+}
+.body nav .hero {
+  min-height: 100vh;
+}
+.body nav .hero .one h1 {
+  font-size: 4rem;
+}
+.body nav .hero .two, .body .category1 .post .products div .cont nav .hero .two, .body nav .hero .category1 .post .products div .two, .body nav .category1 .post .products div .hero .two {
+  background: url(/icon/download\ \(13\).svg);
+  background-position: right;
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: auto;
+}
+.body nav .phone-box {
+  max-width: 500px;
+}
+.body nav .phone-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+.body nav .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 20px;
+}
+.body nav .info-input {
+  background-color: #2e2e33;
+}
+.body nav .btn-info {
+  background-color: #3ABAB4;
+}
+.body nav section.container div {
+  background-color: #2e2e33;
+  border: 10px #1d1d20 solid;
+  height: 150px;
+}
+.body nav section.container div p.gray {
+  color: rgb(167, 167, 167);
+}
+.body nav .slider-container {
+  width: 100%;
+  position: relative;
+}
+.body nav .slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.body nav .slide {
+  min-width: 100%;
+  width: 400px;
+  box-sizing: border-box;
+  height: 500px;
+}
+.body nav .slide img {
+  width: 100%;
+  height: auto;
+}
+.body nav .controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+}
+.body nav .btn-slide {
+  background-color: #2E2E33;
+  border: none;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+.body nav .btn-slide:hover {
+  background-color: #233D3E;
+  color: #4FC69E;
+}
+.body nav .category1 {
+  background: linear-gradient(180deg, #212125, #1e1e21);
+  border-top: 1px rgb(167, 167, 167) solid;
+}
+.body nav .category1 .contant .one {
+  font-size: 50px;
+}
+.body nav .category1 .contant .two, .body nav .category1 .contant .post .products div .two, .body nav .category1 .post .products div .contant .two {
+  color: rgb(167, 167, 167);
+}
+.body nav .category1 .categoryname {
+  flex-wrap: wrap;
+}
+.body nav .category1 .categoryname button {
+  height: 35px;
+  font-size: 15px;
+  margin: 1px;
+}
+.body nav .category1 .categoryname button span {
+  fill: #2e2e33;
+}
+.body nav .category1 .categoryname button span img {
+  fill: red;
+}
+.body nav .category1 .defult-post, .body nav .category1 .post .products {
+  background-image: url(/img/382bbb2d-23b3-4543-b8a9-3263db4aeec2.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+  margin-top: 50px;
+  width: 300px;
+  height: 200px;
+}
+.body nav .category1 .defult-post button, .body nav .category1 .post .products button {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  border: none;
+  position: absolute;
+  top: 30px;
+  left: 115px;
+}
+.body nav .category1 .defult-post .cont, .body nav .category1 .post .products .cont {
+  background-color: rgba(29, 29, 32, 0.6666666667);
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding-top: 10px;
+  height: 40px;
+  color: #9be6dc;
+}
+.body nav .category1 .defult-post .cont .two, .body nav .category1 .post .products .cont .two, .body nav .category1 .defult-post .cont .post .products div .two {
+  background-color: #223c3e;
+  width: 50px;
+}
+.body nav .category1 .post {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.body nav .category1 .post .category {
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.body nav .category1 .post .products {
+  display: none;
+}
+.body nav .category1 .post .products button {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  border: none;
+  position: absolute;
+  top: 30px;
+  left: 115px;
+}
+.body nav .category1 .post .products div {
+  margin-left: -12px;
+}
+.body nav .category1 .post .active {
+  display: block;
+}
+.body .stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.body .stepper img {
+  width: 100%;
+}
+.body .step {
+  width: 40px;
+  height: 40px;
+  background-color: #264d48;
+  color: #7fc3be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.body .active {
+  background-color: #2d6f68;
+  color: #a8e6dc;
+}
+.body .category1 {
+  background: linear-gradient(180deg, #212125, #1e1e21);
+  border-top: 1px rgb(167, 167, 167) solid;
+}
+.body .category1 .contant .two, .body .category1 .contant .post .products div .cont .two, .body .category1 .post .products div .cont .contant .two, .body nav .category1 .contant .post .products div .two, .body nav .category1 .post .products div .contant .two {
+  color: rgb(167, 167, 167);
+}
+.body .category1 .categoryname {
+  flex-wrap: wrap;
+}
+.body .category1 .categoryname button {
+  height: 35px;
+  font-size: 15px;
+  margin: 5px;
+}
+.body .category1 .categoryname button span {
+  fill: #2e2e33;
+}
+.body .category1 .categoryname button span img {
+  fill: red;
+}
+.body .category1 .defult-post, .body .category1 .post .products, .body nav .category1 .post .products {
+  background-image: url(/img/382bbb2d-23b3-4543-b8a9-3263db4aeec2.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+  margin-top: 50px;
+  width: 300px;
+  height: 200px;
+}
+.body .category1 .defult-post button, .body .category1 .post .products button {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  border: none;
+  position: absolute;
+  top: 30px;
+  left: 115px;
+}
+.body .category1 .defult-post .cont, .body .category1 .post .products .cont, .body .category1 .post .products div .cont {
+  background-color: rgba(29, 29, 32, 0.6666666667);
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding-top: 10px;
+  margin-left: -12px;
+  height: 40px;
+  color: #9be6dc;
+}
+.body .category1 .defult-post .cont .two, .body .category1 .post .products .cont .two, .body .category1 .post .products div .cont .two, .body nav .category1 .defult-post .cont .post .products div .two {
+  background-color: #223c3e;
+  width: 50px;
+}
+.body .category1 .post {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.body .category1 .post .category {
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.body .category1 .post .products {
+  display: none;
+}
+.body .category1 .post .products button {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  border: none;
+  position: absolute;
+  top: 30px;
+  left: 115px;
+}
+.body .category1 .post .products div .cont {
+  margin-left: -12px;
+}
+.body .category1 .post .active {
+  display: block;
+}
+.body .content {
+  background: linear-gradient(180deg, #212125, #1e1e21);
+  border-top: 1px rgb(167, 167, 167) solid;
+}
+.body .content .d-cont p.two, .body .content .d-cont nav .category1 .post .products div p.two, .body nav .category1 .post .products div .content .d-cont p.two, .body .content .d-cont .category1 .post .products div .cont p.two, .body .category1 .post .products div .cont .content .d-cont p.two {
+  color: rgb(167, 167, 167);
+}
+.body .content .d-post {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 60px;
+  column-gap: 20px;
+}
+.body .content .d-post .one .image img {
+  width: 100px;
+}
+.body .content .d-post .one p {
+  color: rgb(167, 167, 167);
+  font-size: 12px;
+}
+.body .content .d-post .two, .body .content .d-post nav .category1 .post .products div .two, .body nav .category1 .post .products div .content .d-post .two, .body .content .d-post .category1 .post .products div .cont .two, .body .category1 .post .products div .cont .content .d-post .two {
+  background-color: #313034;
+  border: 2px #3ABAB4 solid;
+  height: 350px;
+}
+.body .content .d-post .two .head .two, .body .content .d-post .category1 .post .products div .cont .two .head .two, .body .category1 .post .products div .cont .content .d-post .two .head .two, .body .content .d-post .two .head .category1 .post .products div .cont .two {
+  width: 50px;
+  height: 20px;
+  background-color: #294c4f;
+  color: #9be6dc;
+  font-size: 12px;
+  margin-top: 10px;
+  border: none;
+}
+.body .content .d-post .cont span, .body .content .d-post .category1 .post .products div .cont span, .body .category1 .post .products div .content .d-post .cont span {
+  color: rgb(167, 167, 167);
+}
+.body .content .d-post .cont b, .body .content .d-post .category1 .post .products div .cont b, .body .category1 .post .products div .content .d-post .cont b {
+  font-weight: bold;
+}
+.body .content .d-post .three, .body .content .d-post .four {
+  background-color: #313034;
+  height: 350px;
+}
+.body .button {
+  height: 15vh;
+  display: flex;
+  align-items: end;
+}
+.body .button button {
+  background-color: #3ABAB4;
+}
+.body .button2 {
+  height: 15vh;
+  display: flex;
+  align-items: end;
+}
+.body .button2 button {
+  background-color: #4a494e;
+  border-radius: 5px;
+  color: #4fd1c5;
+}
+.body .comment article div .paragraf {
+  color: rgb(167, 167, 167);
+}
+.body .comment article div span {
+  font-size: 14px;
+}
+.body .comment article div span a {
+  color: #32a89c;
+}
+.body .services .one p {
+  font-size: 40px;
+}
+.body .services .two div, .body .services nav .category1 .post .products div .two div, .body nav .category1 .post .products div .services .two div, .body .services .category1 .post .products div .cont .two div, .body .category1 .post .products div .cont .services .two div {
+  height: 250px;
+}
+.body .services .two .custom-card, .body .services .two .custom-card4, .body .services nav .category1 .post .products div .two .custom-card4, .body nav .category1 .post .products div .services .two .custom-card4, .body .services .category1 .post .products div .cont .two .custom-card4, .body .category1 .post .products div .cont .services .two .custom-card4, .body .services .two .custom-card3, .body .services nav .category1 .post .products div .two .custom-card3, .body nav .category1 .post .products div .services .two .custom-card3, .body .services .category1 .post .products div .cont .two .custom-card3, .body .category1 .post .products div .cont .services .two .custom-card3, .body .services .two .custom-card2, .body .services nav .category1 .post .products div .two .custom-card2, .body nav .category1 .post .products div .services .two .custom-card2, .body .services .category1 .post .products div .cont .two .custom-card2, .body .category1 .post .products div .cont .services .two .custom-card2, .body .services .two .custom-card1, .body .services nav .category1 .post .products div .two .custom-card1, .body nav .category1 .post .products div .services .two .custom-card1, .body .services .category1 .post .products div .cont .two .custom-card1, .body .category1 .post .products div .cont .services .two .custom-card1, .body .services nav .category1 .post .products div .two .custom-card, .body nav .category1 .post .products div .services .two .custom-card, .body .services .category1 .post .products div .cont .two .custom-card, .body .category1 .post .products div .cont .services .two .custom-card {
+  color: white;
+  outline: 15px #1D1D20 solid;
+}
+.body .services .two .custom-card1, .body .services nav .category1 .post .products div .two .custom-card1, .body nav .category1 .post .products div .services .two .custom-card1, .body .services .category1 .post .products div .cont .two .custom-card1, .body .category1 .post .products div .cont .services .two .custom-card1 {
+  background-color: #3ABAB4;
+}
+.body .services .two .custom-card2, .body .services nav .category1 .post .products div .two .custom-card2, .body nav .category1 .post .products div .services .two .custom-card2, .body .services .category1 .post .products div .cont .two .custom-card2, .body .category1 .post .products div .cont .services .two .custom-card2 {
+  background-color: #9F7AEA;
+}
+.body .services .two .custom-card3, .body .services nav .category1 .post .products div .two .custom-card3, .body nav .category1 .post .products div .services .two .custom-card3, .body .services .category1 .post .products div .cont .two .custom-card3, .body .category1 .post .products div .cont .services .two .custom-card3 {
+  background-color: #667EEA;
+}
+.body .services .two .custom-card4, .body .services nav .category1 .post .products div .two .custom-card4, .body nav .category1 .post .products div .services .two .custom-card4, .body .services .category1 .post .products div .cont .two .custom-card4, .body .category1 .post .products div .cont .services .two .custom-card4 {
+  background-color: #DA5C99;
+}
+.body .services .two p, .body .services nav .category1 .post .products div .two p, .body nav .category1 .post .products div .services .two p, .body .services .category1 .post .products div .cont .two p, .body .category1 .post .products div .cont .services .two p {
+  font-size: 22px;
+}
+.body .services .two .img1, .body .services nav .category1 .post .products div .two .img1, .body nav .category1 .post .products div .services .two .img1, .body .services .category1 .post .products div .cont .two .img1, .body .category1 .post .products div .cont .services .two .img1 {
+  height: 30px;
+}
+.body .services .two .img2, .body .services nav .category1 .post .products div .two .img2, .body nav .category1 .post .products div .services .two .img2, .body .services .category1 .post .products div .cont .two .img2, .body .category1 .post .products div .cont .services .two .img2 {
+  width: 30px;
+  transition: 0.3s;
+  margin: 10px 10px;
+  float: right;
+}
+.body .services .two .img2:hover, .body .services nav .category1 .post .products div .two .img2:hover, .body nav .category1 .post .products div .services .two .img2:hover, .body .services .category1 .post .products div .cont .two .img2:hover, .body .category1 .post .products div .cont .services .two .img2:hover {
+  transform: translateX(10px);
+}
+.body .services .three {
+  background: url(/icon/download\ \(1\).svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-color: #2e2e33;
+  height: 230px;
+}
+.body .services .three p {
+  font-size: 38px;
+  z-index: 9;
+}
+.body .services .three img {
+  z-index: 2;
+}
+.body .section .one img {
+  width: 40px;
+  height: 50px;
+}
+.body .section .one a {
+  color: rgb(167, 167, 167);
+  font-size: 12px;
+}
+.body .section .two .ff div div, .body .section nav .category1 .post .products div .two .ff div div, .body nav .category1 .post .products div .section .two .ff div div, .body .section .category1 .post .products div .cont .two .ff div div, .body .category1 .post .products div .cont .section .two .ff div div {
+  width: 30px;
+  height: 30px;
+  background-color: #32a89c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-right: 10px;
+}
+.body .section .two .ff div div .icon, .body .section .category1 .post .products div .cont .two .ff div div .icon, .body .category1 .post .products div .cont .section .two .ff div div .icon {
+  height: 20px;
+  width: 20px;
+  color: red;
+}
+.body .section .two p, .body .section nav .category1 .post .products div .two p, .body nav .category1 .post .products div .section .two p, .body .section .category1 .post .products div .cont .two p, .body .category1 .post .products div .cont .section .two p {
+  font-size: 10px;
+  color: rgb(167, 167, 167);
+}
+.body .underfutter div {
+  background: url(/icon/download\ \(1\).svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  height: auto;
+}
+
+.bd-top {
+  border-top: 1px #aaa solid;
+}
+
+hr {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+    </style>
+</head>
+<body class=" body" >
+    
+<header class="d-flex justify-content-between">
+    
+    <div class="p-1 col-3">
+
+        <img src="2090b3a4-16d3-4978-8b34-39d7f066a3f6.png" alt="">
+    </div>
+    <div class="d-sm-flex me-5 d-none one"> 
+        <img src="Annotation 2025-03-14 152852.png" alt="">
+    </div>
+    <div class="">
+        <div class="d-flex mt-1" id="accordionExample">
+            <div class="accordion-item bg-transparent  d-sm-flex d-none ">
+                <h2 class="bg-transparent text-light " id="headingOne">
+                    <button class="accordion-button bg-transparent   text-center  p-3 border border-dark rounded" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span>Home</span>
+                        <img  src="arrow-ios-upward-outline.svg" alt="" >
+                    </button> 
+                </h2>
+            </div>
+            <div id="collapseOne" class=" collapse cole m-3  " aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                
+                        <li class="list-group-item text-primary">Home</li>
+                        <li class="list-group-item text-black ">About</li>
+                        <li class="list-group-item text-black">Blog</li>
+                        <li class="list-group-item text-black ">Blog Post</li>
+                        <li class="list-group-item text-black">Testimoioals</li>
+                        <li class="list-group-item text-black">Help center</li>
+                        <li class="list-group-item text-black">404</li>
+                        <li class="list-group-item text-black">Contant</li>
+                    
+            </div>
+
+
+            <div class="buy d-flex ">
+                <button class="mx-3 ">
+                        Buy Now -$49
+
+                </button>
+                <img class="mb-2 me-3" src="close-outline.svg" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+</header>
+
+<div class="background">
+<!--  -->
+<nav class=" container">
+    <section class="header2 ">
+        <div class="navbar container navbar-expand-md navbar-dark  sticky-top ">
+            <div class="container col-6 p-2 ">
+                <img src="Annotation 2025-03-13 234838.png" alt="">
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse menu " id="navbarNav">
+    
+                    <ul class="navbar-nav mx-auto  ">
+    
+    
+    
+                        <li class="nav-item  ">
+                            <a class="nav-link  text-white  " href="index.html">About</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link  text-white " href="about us.html">Blog</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white  " href="services.html">Testimoioals</a>
+                        </li>
+    
+                        <li class="nav-item dropdown  ">
+                            <a class="nav-link dropdown-toggle text-white " href="#" data-bs-toggle="dropdown">
+    
+                                Resources                        </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="profile.html">نمونه کار ها</a></li>
+                                <li><a class="dropdown-item" href="blog.html">وبلاگ</a></li>
+                                <li><a class="dropdown-item" href="contact us.html">تماس با ما</a></li>
+                                <li><a class="dropdown-item" href="login.html">صفحه ورود و ثبت نام</a></li>
+                                <li><a class="dropdown-item" href="page 404.html">صفحه 404</a></li>
+    
+    
+                            </ul>
+                        </li>
+                    </ul>
+    
+            
+                </div>
+            </div>
+                <div class="d-flex col-6 justify-content-end ">
+                    <div class=" mt-2">
+    
+                        <label class="switch">
+                            <input type="checkbox" >
+                            <span class="slider2 "></span>
+                          </label>
+                    </div>
+                  <div class="three mx-4 row bg-bdark justify-content-center align-items-center ">
+                            
+    
+                            
+                    <button class="btn btn-info text-white col-12 d-none d-sm-flex ">Request Code</button>
+    
+                </div>
+                  
+            </div>
+        </div>
+    </section>
+            <section class="row hero d-flex justify-content-center align-items-center">
+                <article class="one col-md-6 text-center text-sm-start text-md-start   ">
+                    <h1 class="fw-bold text-md-start ps-md-3 ">Your website, reimagined</h1>
+                    <p class="m-3 text-sm-strat text-md-start ">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+                    <div class="row d-flex col-12  justify-content-center justify-content-sm-start mt-3 g-2   mb-4">
+                        <input type="text " class="info-input form-control text-white w-50  col-8 col-sm-6 mx-2" placeholder="phone numberr">
+                        <button class="btn btn-info text-white col-8 col-sm-5">Request Code</button>
+                    </div>
+                    <ul class="list-unstyled  text-start text-sm-strat text-md-start  ms-5 ps-2 ps-md-0  ms-md-2 ">
+                        <li>✔ Lorem ipsum is placeholder text commonly.</li>
+                        <li>✔ Excepteur sint occaecat cupidatat.</li>
+                        <li>✔ Lorem ipsum is placeholder text commonly.
+                        </li>
+                    </ul>
+                </article>
+                <article class=" two col-md-6 d-flex justify-content-center ">
+                    <div>
+
+                        <div class="position-relative phone-box ">
+                            <img src="r.php.png" alt="">
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="container">
+                <article class="row">
+                    <div class="col-6 col-md-3">
+                        <p class="display-4">2.4M</p>
+                        <p class="gray">2.4M
+                            Days turn around</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <p class="display-4">7M</p>
+                        <p class="gray">7M
+                            Days turn around</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <p class="display-4">2.4M</p>
+                        <p class="gray">2.4M
+                            Days turn around</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <p class="display-4">7M</p>
+                        <p class="gray">7M
+                            Days turn around</p>
+                    </div>
+                </article>
+            </section>
+        </nav>
+
+        <!--  -->
+        <nav class=" container2   bd-top">
+            <section class="">
+                <article class="d-flex justify-content-center  pt-5">
+                    <p class= "display-5 col-12 col-sm-10 text-center">
+                        <b>
+                            <b>
+
+                                From rough design files, to powerful products
+                            </b>
+                        </b>
+                    </p>
+
+                </article>
+                <article class="d-flex justify-content-center" >
+
+                    <p class="col-12 col-sm-12 text-center gray">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.
+                    </p>
+                </article>
+            </section>
+
+            <section class="d-flex ">
+                <div class="slider-container my-5 position-relative overflow-hidden d-flex justify-content-center align-items-center ">
+        
+                    <div class="slider  col-12 col-sm-8 col-lg-6 justify-content-center  "> 
+                        <div class="slide p-3"><img src="carousel-item-02.jpg" alt="Slide 1"></div> 
+                        <div class="slide p-3"><img src="carousel-item-03.jpg" alt="Slide 3"></div> 
+                        <div class="slide p-3"><img src="carousel-item-04.jpg" alt="Slide 2"></div> 
+                        <div class="slide p-3"><img src="carousel-item-05.jpg" alt="Slide 3"></div> 
+                        <div class="slide p-3"><img src="carousel-item-01.jpg" alt="Slide 2"></div> 
+                    </div> 
+                    <div class="controls mt-5 "> 
+                        <button class="btn-slide" id="prev">&#10094;</button> 
+                        <button class="btn-slide" id="next">&#10095;</button> 
+                    </div> 
+                </div>
+            </section>  
+
+            <section class="category1">
+                <article class="contant row text-center justify-content-center ">
+
+                        <p class= "one display-5  col-12 col-md-10 text-center p-3">
+                            <b>
+                                <b>
+    
+                                    Turn your ideas into reality in seconds                                </b>
+                            </b>
+                        </p>
+
+                        <p class= "two col-10 col-md-10 text-center gray">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.                        </p>
+
+                </article>
+                <article class="categoryname container  d-flex justify-content-center  "> 
+                    <div class=" categoryname row d-flex justify-content-center col-12 col-lg-3 mt-4 ">
+
+                        <button class="button btn rounded bg-dark text-light  category col-auto  col-lg-12" onclick="showProducts('category1')"><img src="bx-shape-square.svg" alt=""></span> Getting Started</button>
+                        <button class="button btn rounded bg-dark text-light  category col-auto  col-lg-12" onclick="showProducts('category2')"><img src="bx-reflect-horizontal.svg" alt=""> Collection list</button>
+                        <button class="button btn rounded bg-dark text-light  category col-auto  col-lg-12" onclick="showProducts('category3')"><img src="bxs-widget.svg" alt=""> Element Hiechy</button>
+                        <button class="button btn rounded bg-dark text-light  category col-auto  col-lg-12" onclick="showProducts('category4')"><img src="bx-paint.svg" alt=""> Styling Basics</button>
+                        <button class="button btn rounded bg-dark text-light  category col-auto  col-lg-12" onclick="showProducts('category5')"><img src="bx-minus-back.svg" alt=""> Image Field</button>
+                    </div>
+                    <!-- ______ -->
+                    <!-- ______ -->
+                    <div class="post col-12 col-md-8 row">
+                        
+                        <div class="defult-post ">
+                            <button ><img src="bxs-right-arrow.svg" alt=""></button>
+                            <div class="cont d-flex justify-content-around align-items-center">
+                                <p class="one ">
+                                    Intro to the style model</p>
+                                <p class="two rounded-pill text-center ">9Min</p>
+                            </div>
+                        </div>
+                        <div id="category1" class="products row justify-content-center  mt-lg-5">
+                            <div class="one ">
+                                <button class=""><img src="bxs-right-arrow.svg" alt=""></button>
+                                <div class="cont d-flex justify-content-around align-items-center">
+                                    <p class="one">
+                                        Using index pages</p>
+                                    <p class="two rounded-pill text-center ">2Min</p>
+                                </div>
+
+                            </div>
+                        
+                        </div>
+               
+                        <div id="category2" class="products row justify-content-center  mt-lg-5">
+                            <div class="one ">
+                                <button><img src="bxs-right-arrow.svg" alt=""></button>
+                                <div class="cont  d-flex justify-content-around align-items-center">
+                                    <p class="one">
+                                        working with content</p>
+                                    <p class="two rounded-pill text-center ">4Min</p>
+                                </div>
+
+                            </div>
+                        
+                        </div>
+               
+                        <div id="category3" class="products row justify-content-center  mt-lg-5">
+                            <div class="one ">
+                                <button><img src="bxs-right-arrow.svg" alt=""></button>
+                                <div class="cont d-flex justify-content-around align-items-center">
+                                    <p class="one">Understand hierarchy
+                                    </p>
+                                    <p class="two rounded-pill text-center ">3Min</p>
+                                </div>
+
+                            </div>
+                        
+                        </div>
+               
+                        <div id="category4" class="products row justify-content-center  mt-lg-5">
+                            <div class="one ">
+                                <button><img src="bxs-right-arrow.svg" alt=""></button>
+                                <div class="cont d-flex justify-content-around align-items-center">
+                                    <p class="one">Customisations</p>
+                                    <p class="two rounded-pill text-center ">11Min</p>
+                                </div>
+
+                            </div>
+
+
+                        
+                        </div>
+               
+                        <div id="category5" class="products row justify-content-center  mt-lg-5">
+                            <div class="one ">
+                                <button><img src="bxs-right-arrow.svg" alt=""></button>
+                                <div class="cont d-flex justify-content-around align-items-center">
+                                    <p class="one">Using index pages</p>
+                                    <p class="two rounded-pill text-center ">2Min</p>
+                                </div>
+
+                            </div>
+                        
+                        </div>
+                    </div>
+                    </article>
+                    
+            </section>
+            <section class=" container2 pt-4 bd-top  container-md">
+                <article class="contant  row text-center justify-content-center ">
+
+                    <p class= "display-5  col-12 col-md-6 text-center">
+                        <b>
+                            <b>
+
+                                Build and style every element to perfection                                                     </b>
+                        </b>
+                    </p>
+
+                    <p class= "two col-10 col-md-7 text-center gray">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.
+            </article>
+            <article class="borders d-flex justify-content-evenly ">
+
+                <div class="stepper px-5 container-sm">
+                    <div class="step d-none d-sm-flex   "><h3>1</h3></div>
+                    <div class="d-none d-sm-flex line "><img src="green_tinted_image.png" alt=""></div>
+                    <div class="step active d-none d-sm-flex  "><h3>2</h3></div>
+                    <div class="d-none d-sm-flex line "><img src="green_tinted_image.png" alt=""></div>
+                    <div class="step d-none d-sm-flex  "><h3>3</h3></div>
+                </div>
+            </article>
+            <article class=" row px-5 p-5 d-flex justify-content-center align-items-center ">
+                <div class="step my-4 d-sm-none">1</div>
+
+                <img src="IMG_20250312_055355_464.png" alt="" class="col-12 col-sm-4">
+                <div class="step active my-4 d-sm-none">2</div>
+
+                <img src="IMG_20250312_055413_049.png" alt="" class="col-12 col-sm-4">
+                <div class="step active my-4 d-sm-none">3</div>
+
+                <img src="IMG_20250312_055352_888.png" alt="" class="col-12 col-sm-4">
+            </article>
+            </section>
+            
+            <section class="content mb-5">
+                <article class="d-cont row text-center justify-content-center ">
+
+                        <p class= "display-5  col-10 col-md-6 text-center mt-5">
+                            <b>
+                                <b>
+    
+                                    Start building for free, then add a plan to go live                            </b>
+                        </p>
+
+                        <p class= "two col-12 col-md-12 text-center  px-5">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla.
+                </article>
+                <article class="d-flex justify-content-center ">
+
+                <article class=" d-post row d-flex container-md   justify-content-center g-4 ">
+                    <div class="one col-12 col-sm-5 col-lg-2   order-4 order-sm-1 mb-5  ">
+                        <div class="image mt-3  d-flex justify-content-end">
+
+                            <img class="d-none d-sm-block " src="r.phhp.png" alt="" >
+                        </div>
+                        <div class="pb-3">
+
+                            <h4>
+                                All plans include:
+                            </h4>
+                                <p>✔ Unlimited domains</p>
+                                <p>✔ Unlimited web pages</p>
+                                <p>✔ Conversion analytics</p>
+                                <p>✔ A/B testing</p>
+                                <p>✔ Exclusive channels</p>
+                                <p>✔ Free resources</p>
+                                <p>✔ Landing page builder</p>
+                                <p>✔ Smart  and reports</p>
+                        </div>
+
+                    </div>
+
+                    <div class="two p-4 col-12 col-sm-5 col-lg-3 order-1 order-sm-2">
+                        <div class="head d-flex justify-content-between">
+                            <h5>
+                                Yearly
+                            </h5>
+                            <p class="two rounded-pill text-center ">40%</p>
+                        </div>
+                        <div class="cont">
+                            <span class=" display-6">$</span> 
+                            <b class="display-5 ">
+                                27
+                            </b>
+                            <span>/billed Yearly</span>
+                            <br>
+                            <br>
+                            <span>
+                                — Lorem ipsum dolor amet sit consect adipiscing.
+                            </span>
+                        </div>
+                        <div class="button">
+                            <button class="btn  text-white col-12 mb-3">Go Premium</button>
+
+                        </div>
+                
+                    </div>
+
+                    <div class="three col-12 col-sm-5 col-lg-3 p-4 order-2 order-sm-3">
+                        <div class="head d-flex justify-content-between">
+                            <h5>
+                                Monthly
+                            </h5>
+                        </div>
+                        <div class="cont">
+                            <span class=" display-6">$</span> 
+                            <b class="display-5 ">
+                                47
+                            </b>
+                            <span>/billed Yearly</span>
+                            <br>
+                            <br>
+                            <span>
+                                — Lorem ipsum dolor amet sit consect adipiscing.
+                            </span>
+                        </div>
+                        <div class="button2">
+                            <button class="btn    col-12  ">Go Premium</button>
+
+                        </div>
+                
+                    </div>
+
+                    <div class="four col-12 col-sm-5 col-lg-3 p-4 order-3 order-sm-4">
+                        <div class="head d-flex justify-content-between  ">
+                            <h5>
+                                Lifetime
+                            </h5>
+                        </div>
+                        <div class="cont">
+                            <span class=" display-6">$</span> 
+                            <b class="display-5 ">
+                                127
+                            </b>
+                            <span>/billed Yearly</span>
+                            <br>
+                            <br>
+                            <span>
+                                — Lorem ipsum dolor amet sit consect adipiscing.
+                            </span>
+                        </div>
+                        <div class="button2">
+                            <button class="btn   col-12  ">Go Premium</button>
+
+                        </div>
+                
+                    </div>
+                </article>
+
+
+            </section>
+            <section class="comment  pt-5 bd-top container-md">
+                <article class="contant row text-center justify-content-center  ">
+                    <div class="col-10 col-sm-5 p-4"> 
+                        <img src="Annotation 2025-03-13 195732.png" alt="">
+                        <p class="paragraf">
+                            “ This is a great app and the value is amazing. Since I purchased it I have been using it everyday! Highly recommend it. “
+                        </p>
+                        <span>—Andy Croll, <a href="" class="text-decoration-none "> Appy.com</a></span>
+                    </div>
+                    <div class="col-10 col-sm-5 p-4"> 
+                        <img src="Annotation 2025-03-13 201428.png" alt="">
+                        <p>
+                            “ This is a great app and the value is amazing. Since I purchased it I have been using it everyday! Highly recommend it. “
+                        </p>
+                        <span>—Patricia Lepisov, <a href="" class="text-decoration-none "> Nobi Bank</a></span>
+                    </div>
+                    <div class="col-10 col-sm-5 p-4"> 
+                        <img src="Annotation 2025-03-13 195817.png" alt="">
+                        <p>
+                            “ This is a great app and the value is amazing. Since I purchased it I have been using it everyday! Highly recommend it. “
+                        </p>
+                        <span>—Zhenya Ritz,<a href="" class="text-decoration-none ">  Sync</a></span>
+                    </div>
+                    <div class="col-10 col-sm-5 p-4"> 
+                        <img src="Annotation 2025-03-13 201310.png" alt="">
+                        <p>
+                            “ This is a great app and the value is amazing. Since I purchased it I have been using it everyday! Highly recommend it. “
+                        </p>
+                        <span>—Lisa Champ, <a href="" class="text-decoration-none "> Appicu</a></span>
+                    </div>
+          
+        
+            </article>
+            </section>
+            <section class="services ">
+                    <article class="one contant bd-top   pt-5  d-flex  text-center justify-content-center container-md ">
+
+                        <p class= " col-12 col-md-10 text-center ">
+                            <b>
+                                
+                                <b>
+    
+                                    Put clrity at the center of your website                            </b>
+                        </p>
+    
+                </article>
+                <article class="container ">
+                    <!-- <body class="d-flex justify-content-center align-items-center vh-100 bg-dark container-md "> -->
+                        <div class="two row d-flex justify-content-center g-3 g-sm-0 mx-2 " >
+
+                        <div class="custom-card1 position-relative col-7 col-sm-5 col-lg-3">
+                            <img class="img1 mb-2 m-3" src="bx-shape-square.svg" alt="">
+                            <p class="text-light f-4">Simpler Sharing</p>
+                            <span>Lorem ipsum dolor amet sit consect adipiscing.</span>
+                            <img  class="img2 mt-5  " src="arrow-right-33.svg" alt="">
+
+                        </div>
+                        <div class="custom-card2 position-relative col-7 col-sm-5 col-lg-3">
+                            <img class="img1 mb-2 m-3" src="bx-minus-back.svg "alt="">
+                            <p class="text-light f-4">Simpler Sharing</p>
+                            <span>Lorem ipsum dolor amet sit consect adipiscing.</span>
+                            <img  class="img2  mt-5" src="arrow-right-33.svg" alt="">
+
+                        </div>
+                        <div class="custom-card3 position-relative col-7 col-sm-5 col-lg-3">
+                            <img class="img1 mb-2 m-3" src="bxs-widget.svg" alt="">
+                            <p class="text-light f-4">Simpler Sharing</p>
+                            <span>Lorem ipsum dolor amet sit consect adipiscing.</span>
+                            <img  class="img2  mt-5" src="arrow-right-33.svg" alt="">
+
+                        </div>
+                        <div class="custom-card4 position-relative col-7 col-sm-5 col-lg-3">
+                            <img class="img1 mb-2 m-3" src="bx-paint.svg" alt="">
+                            <p class="text-light f-4">Simpler Sharing</p>
+                            <span>Lorem ipsum dolor amet sit consect adipiscing.</span>
+                            <img  class="img2 mt-5 " src="arrow-right-33.svg" alt="">
+
+                        </div>
+                          </div>
+
+
+                </article>
+                
+                <article class="container-md">
+                    <div class="three m-2  mt-5 row bg-bdark justify-content-center align-items-center ">
+                        
+
+                        
+                        <p class="text-center text-lg-start col-10 col-sm-11 col-lg-5">Free until you're ready to launch</p>
+                        <input type="text " class="info-input form-control w-50 col-7 text-white col-sm-4  col-lg-3 mx-2 " placeholder="phone number">
+                        <button class="btn btn-info text-white col-7 col-sm-3 m-3 m-sm-0  col-lg-2">Request Code</button>
+
+                    </div>
+                </article>
+            </section>
+            <section class="section  mt-5">
+                <article class="one container-md   ">
+                    <div class="d-flex row justify-content-between">
+
+                        <div class="col-12 col-sm-2">
+                            
+                            <img src="Annotation 2025-03-13 234838.png" alt="">
+                        </div>
+                        <div class="col-5 col-sm-2">
+                            
+                            <ul class="list-unstyled">
+                                <li><h6 class="text-light head">PRODUCT</h6></li>
+                                <li><a class="text-decoration-none abc" href="">Drag And Drop</a></li>
+                                <li><a class="text-decoration-none abc" href="">Visual Studio X</a></li>
+                                <li><a class="text-decoration-none abc" href="">Easy Content</a></li>
+                            </ul>
+                    </div>
+                    
+                    <div class="col-5 col-sm-2">
+                        
+                        <ul class="list-unstyled">
+                            <li><h6 class="text-light head">RESOURES</h6></li>
+                            <li><a class="text-decoration-none abc" href="">Industries and tools</a></li>
+                            <li><a class="text-decoration-none abc" href="">Use cases</a></li>
+                            <li><a class="text-decoration-none abc" href="">BLog</a></li>
+                            <li><a class="text-decoration-none abc" href="">Online events</a></li>
+                            <li><a class="text-decoration-none abc" href="">Nostrud exercitation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 col-sm-2">
+                        
+                        <ul class="list-unstyled">
+                            <li><h6 class="text-light head">COMPANY</h6></li>
+                            <li><a class="text-decoration-none abc" href="">Diversity & inclusion</a></li>
+                            <li><a class="text-decoration-none abc" href="">About us</a></li>
+                            <li><a class="text-decoration-none abc" href="">Press</a></li>
+                            <li><a class="text-decoration-none abc" href="">Customer stories</a></li>
+                            <li><a class="text-decoration-none abc" href="">Online communities</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-5 col-sm-2">
+                        
+                        <ul class="list-unstyled">
+                            <li><h6 class="text-light head">SUPPORT</h6></li>
+                            <li><a class="text-decoration-none abc" href="">Documentation</a></li>
+                            <li><a class="text-decoration-none abc" href="">Tutorials & guides</a></li>
+                            <li><a class="text-decoration-none abc" href="">Webinars</a></li>
+                            <li><a class="text-decoration-none abc" href="">Open-source</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </article>
+                <article class="two container-md d  ">
+                    <div class="ff d-sm-flex row p-3  ">
+                        <div class="d-flex pt-2 justify-content-sm-center  order-3 col-sm-4 order-sm-1"><p>© Cruip.com. All rights reserved.</p></div>
+                        <div class="d-flex pt-2 justify-content-sm-center  order-2 col-sm-4 order-sm-2"><p>Terms · Privacy Policy</p></div>
+                      <div class=" d-flex  justify-content-sm-center  col-7 order-1 col-sm-4 order-sm-3 mb-3 me-4  ">
+                            <div>
+                                <img class="icon" src="close-outline.svg" alt="">
+                            </div>
+                            <div>
+                                <img class="icon" src="github-outline.svg" alt="">
+
+                            </div>
+                            <div>
+
+                                <img class="icon" src="facebook.svg" alt="">
+                            </div>
+                            <div>
+                                <img class="icon" src="instagram.svg" alt="">
+
+                            </div>
+
+                            <div>
+                                <img class="icon" src="linkedin-outline.svg" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </article>
+            </section>
+     </section>
+
+        </nav>
+        
+    
+
+
+        <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+        <script >
+            function showProducts(category) {
+    const products = document.querySelectorAll('.products');
+    products.forEach(product => {
+    product.classList.remove('active');
+    });
+    document.getElementById(category).classList.add('active');
+    }
+
+    let index = 0; 
+    const slides = document.querySelectorAll(".slide"); 
+    const slider = document.querySelector(".slider"); 
+     
+    document.getElementById("next").addEventListener("click", function() { 
+        index = (index + 1) % slides.length; 
+        updateSlide(); 
+    }); 
+     
+    document.getElementById("prev").addEventListener("click", function() { 
+        index = (index - 1 + slides.length) % slides.length; 
+        updateSlide(); 
+    }); 
+     
+    function updateSlide() { 
+        slider.style.transform = `translateX(-${index * 30}%)`; 
+    } 
+
+
+    
+        </script>
+
+    
+    
+
+</body>
+</html>
